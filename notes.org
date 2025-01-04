@@ -1,0 +1,17 @@
+* Interview Grinding
+** Schedule
+    - Mon, Tue: LeetCode
+    - Wed: System Design (neetcode)
+    - Sat: ML design (huyen chip)
+    - Sun: Brain tease (quantguide)
+** ML Design
+- [[https://github.com/chiphuyen/machine-learning-systems-design/tree/master][GitHub - chiphuyen/machine-learning-systems-design: A booklet on machine lear...]]
+- https://huyenchip.com/machine-learning-systems-design/exercises.html#exercises-rWl8SQW
+- https://github.com/chiphuyen/dmls-book/blob/main/summary.md
+** Quant
+- DOING [[https://www.quantquestions.com/questions/explore/][Explore - Quant Questions]]
+- [[https://www.quantguide.io/][QuantGuide - Interview Prep Platform for Quants]]
+- [[https://www.puzzledquant.com/][PuzzledQuant | Online Quant interview preparation for professionals]] (more
+  votes)
+- [[https://brainstellar.com/puzzles][Brainstellar Puzzles from Quant Interviews]]
+- [[https://quantquestions.io/problems/bridge-crossing][Quant Questions - The Leading Quant Question Platform]]
