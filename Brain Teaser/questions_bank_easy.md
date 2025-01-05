@@ -70,7 +70,8 @@ the hand of every other person besides their partner, how many handshakes occur?
 - Ans 1: 8*6/2 =24 (divided by 2 to remove dups)
   + 8 people to start. Each of these can only share with the other 6's (since we
     exclude the person and its partner)
-- Ans 2: 2C8 - 4
+- Ans 2: 8C2 - 4  ( 8 people, choose 2 people to shake hand with each other => 8C2, also minus 4 illegal handshakes between the couple itself => 24)
+
 
 ###########################################################
 https://quantquestions.io/problems/theater-seating
