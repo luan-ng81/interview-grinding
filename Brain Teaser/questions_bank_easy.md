@@ -43,6 +43,7 @@ paths can your character take to get to (6,6)?
    - 12 steps, doesn't matter order of ups or downs. but the sum ups or downs must
      be equal to 6.
 
+```
 | 1 |   |   |   |   | 462 | 924 |
 |---+---+---+---+---+-----+-----|
 | 1 |   |   |   |   |     | 426 |
@@ -57,6 +58,7 @@ paths can your character take to get to (6,6)?
 |---+---+---+---+---+-----+-----|
 | 0 | 1 | 1 | 1 | 1 |   1 |   1 |
 |---+---+---+---+---+-----+-----|
+```
 
 ###########################################################
 https://quantquestions.io/problems/couple-handshakes
