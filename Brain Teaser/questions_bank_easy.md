@@ -86,6 +86,6 @@ Total arrangements = 2⋅5!⋅5! = 28800
 https://quantquestions.io/problems/number-50
 How many 10 digit numbers are there whose digits are prime and whose product of
 its digits is exactly 100000?
-- Ans: 10 C 2
+- Ans: 10 C 5
   - 100000 = 10^5 = 2^5 * 5^5
   - among 10 places, we eval number of ways to arrange five 2's and five 5's
