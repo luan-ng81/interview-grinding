@@ -136,7 +136,7 @@ Ten students of distinct heights are lining up for a picture. The photographer
 requires that the two tallest students stand in the two center positions and
 that the remaining students line up such that the heights strictly descend
 outwards. How many ways can the students line up?
-- Ans: 2 * 8C2
+- Ans: 2 * 8C4
 
   WLOG, heights = [1,...,10]. The number of ways that 4 spots to the left of
   position 5th (center) be filled is 8C4 since there are 8 heights left and
