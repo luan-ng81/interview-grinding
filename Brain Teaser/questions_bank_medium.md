@@ -129,3 +129,30 @@ An so on...
 - DN's reference: Solution: [[https://medium.com/@khopsickle/2-eggs-and-100-floors-a032beb77aaa][2 Eggs and 100 Floors. Let’s talk about the 2 Egg problem… | by Catherine Kwa...]]
   + x + (x-1) + (x-2) + (x-3) + .... + 1
   + x(x+1)/2 = 100 x = 13.651 -> ans = 14
+
+###########################################################
+https://quantquestions.io/problems/picture-day
+Ten students of distinct heights are lining up for a picture. The photographer
+requires that the two tallest students stand in the two center positions and
+that the remaining students line up such that the heights strictly descend
+outwards. How many ways can the students line up?
+- Ans: 2 * 8C2
+
+  WLOG, heights = [1,...,10]. The number of ways that 4 spots to the left of
+  position 5th (center) be filled is 8C4 since there are 8 heights left and
+  combination disregard of orders (hence, taking into account of descending
+  condition)
+
+- Arrange 10 first, 9 second
+```
+| pos     | 1 | 2 | 3 | 4 |  5 | 6 | 7 | 8 | 9 | 10 |
+|---------+---+---+---+---+----+---+---+---+---+----|
+| heights |   |   |   |   | 10 | 9 |   |   |   |    |
+```
+
+- Arrange 9 first, 10 second
+```
+| pos     | 1 | 2 | 3 | 4 | 5 |  6 | 7 | 8 | 9 | 10 |
+|---------+---+---+---+---+---+----+---+---+---+----|
+| heights |   |   |   |   | 9 | 10 |   |   |   |    |
+```
