@@ -57,3 +57,15 @@ paths can your character take to get to (6,6)?
 |---+---+---+---+---+-----+-----|
 | 0 | 1 | 1 | 1 | 1 |   1 |   1 |
 |---+---+---+---+---+-----+-----|
+
+###########################################################
+https://quantquestions.io/problems/couple-handshakes
+A room of four couples greet each other by shaking hands. If each person shakes
+the hand of every other person besides their partner, how many handshakes occur?
+
+(1,2) (3,4) (5,6) (7,8)
+
+- Ans 1: 8*6/2 =24 (divided by 2 to remove dups)
+  + 8 people to start. Each of these can only share with the other 6's (since we
+    exclude the person and its partner)
+- Ans 2: 2C8 - 4
