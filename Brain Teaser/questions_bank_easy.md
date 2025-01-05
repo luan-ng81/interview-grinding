@@ -71,3 +71,12 @@ the hand of every other person besides their partner, how many handshakes occur?
   + 8 people to start. Each of these can only share with the other 6's (since we
     exclude the person and its partner)
 - Ans 2: 2C8 - 4
+
+###########################################################
+https://quantquestions.io/problems/theater-seating
+You're taking your 10 students to the theater, the 5 boys and 5 girls are seated in a row. 
+To ensure that the children are engaged during the movie, the teacher states that no two children of the same gender can sit next to each other. 
+How many arrangements are possible for the kids?
+
+- Ans: There are 2 patterns (boy-girl-boy-girl... or girl-boy-girl-boy...): the arrangements of the boys (5!) and the arrangements of the girls (5!).
+Total arrangements = 2⋅5!⋅5! = 28800
