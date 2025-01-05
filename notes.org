@@ -3,7 +3,7 @@
     - Mon, Tue: LeetCode
     - Wed: System Design (neetcode)
     - Sat: ML design (huyen chip)
-    - Sun: Brain tease (quantguide)
+    - Sun: Brain teaser (quantguide)
 ** ML Design
 - [[https://github.com/chiphuyen/machine-learning-systems-design/tree/master][GitHub - chiphuyen/machine-learning-systems-design: A booklet on machine lear...]]
 - https://huyenchip.com/machine-learning-systems-design/exercises.html#exercises-rWl8SQW

@@ -75,9 +75,17 @@ the hand of every other person besides their partner, how many handshakes occur?
 
 ###########################################################
 https://quantquestions.io/problems/theater-seating
-You're taking your 10 students to the theater, the 5 boys and 5 girls are seated in a row. 
-To ensure that the children are engaged during the movie, the teacher states that no two children of the same gender can sit next to each other. 
+You're taking your 10 students to the theater, the 5 boys and 5 girls are seated in a row.
+To ensure that the children are engaged during the movie, the teacher states that no two children of the same gender can sit next to each other.
 How many arrangements are possible for the kids?
 
 - Ans: There are 2 patterns (boy-girl-boy-girl... or girl-boy-girl-boy...): the arrangements of the boys (5!) and the arrangements of the girls (5!).
 Total arrangements = 2⋅5!⋅5! = 28800
+
+###########################################################
+https://quantquestions.io/problems/number-50
+How many 10 digit numbers are there whose digits are prime and whose product of
+its digits is exactly 100000?
+- Ans: 10 C 2
+  - 100000 = 10^5 = 2^5 * 5^5
+  - among 10 places, we eval number of ways to arrange five 2's and five 5's
