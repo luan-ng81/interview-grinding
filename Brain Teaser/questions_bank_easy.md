@@ -151,3 +151,27 @@ cards share the same rank). Calculate the reciprocal of p.
 
 - number of four-of-a-kind = 13
 - p = (13 * (52-4)) / 52C5 -> 1/p = 4165
+
+###########################################################
+https://quantquestions.io/problems/poker-hands-i
+
+You have a pile of 100 coins. 1 of the coins is an unfair coin and has heads on both sides. The remaining 
+99 coins are fair coins. You randomly select a coin from the pile and flip it 10 times. The coin lands heads all 
+10 times. Calculate the probability that the coin you selected is the unfair coin.
+
+F - Pick fair coin
+U - Pick unfair coin
+H - Coin land head 10 times
+F - Pick fair coin
+
+P (U| H) = (P( H|U) P(U) ) /  P (H)
+
+P( H|U) P(U) = 1 * 1/100 = 1/100
+
+
+P (H) = P (U) P(H |U ) + P (F)    P (H|F)
+      = 1/100 * 1      + 99/100 *   (1/2)^ 10  
+
+      = 1024/1123  = 0.912
+
+
