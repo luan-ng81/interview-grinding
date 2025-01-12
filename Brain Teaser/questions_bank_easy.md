@@ -98,6 +98,7 @@ hour time interval is 8/9 ​ Assuming that car crashes occur independently of o
 another and at a constant rate throughout time, find the probability of at least
 one car crash in a 30 minute interval.
 
+A1: 
 - X = >=1 crash in 1 hr
 - ~X = no crash in 1 hr
   + P(~X) = 1- 8/9 = 1/9
@@ -110,3 +111,16 @@ one car crash in a 30 minute interval.
 Z = number of car accidents, mean(Z) = mu. rare event: n*mu = lambda when n->
 infty
 --> then Z follow Poisson(lambda)
+
+A2: X- number of car cash in 1 hour
+ P(X=0) = no crash in 1 hr = (lambda ^k e -lambda )/ k!
+
+=> lambda = log 9 
+lambda = rt => log 9 = r *1 => r = log 9 
+P (X=0 in interval 0.5) = (rt)^k e^(-rt)/k! 
+                        = e^ (-log(9)* 0.5)
+                        = e^ -log (1/3) = 1/3
+
+P (x> 1 in interval)  = 1 - P(X=0 in interval 0.5) = 1 - 1/3 = 2/3
+
+
