@@ -142,3 +142,12 @@ the probability of an even amount of heads.
 - Z = number of heads is even in n-1 tosses for unfair coins
 - Ans = P(Y and X) + P(Z and ~X) = P(X)*P(Y|X) + P(~X)*P(Z|~X)
   = 0.5*(P(Y|X) + P(Z|X)) = 0.5(P(Y) + P(Z)) = 0.5P(Y or Z) = 0.5 x 1  = 0.5
+
+###########################################################
+https://quantquestions.io/problems/poker-hands-i
+A poker hand consists of five cards drawn from a standard deck of 52 cards. Let
+p represent the probability of having a four-of-a-kind (i.e four of the five
+cards share the same rank). Calculate the reciprocal of p.
+
+- number of four-of-a-kind = 13
+- p = (13 * (52-4)) / 52C5 -> 1/p = 4165
