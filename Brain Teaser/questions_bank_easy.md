@@ -130,3 +130,15 @@ https://quantquestions.io/problems/car-crashes
 socks at random. Find the probability that you obtain a matching pair.
 
 10/20C2 = 1/19
+
+###########################################################
+https://quantquestions.io/problems/modified-even-coins
+n coins are laid out in front of you. One of the coins is fair, while the other
+n−1 have probability 0<λ<1 of showing heads. If all n coins are flipped, find
+the probability of an even amount of heads.
+
+- X = 1 H in the fair coin
+- Y = number of heads is odd in n-1 tosses for unfair coins
+- Z = number of heads is even in n-1 tosses for unfair coins
+- Ans = P(Y and X) + P(Z and ~X) = P(X)*P(Y|X) + P(~X)*P(Z|~X)
+  = 0.5*(P(Y|X) + P(Z|X)) = 0.5(P(Y) + P(Z)) = 0.5P(Y or Z) = 0.5*1 =0.5
