@@ -141,4 +141,4 @@ the probability of an even amount of heads.
 - Y = number of heads is odd in n-1 tosses for unfair coins
 - Z = number of heads is even in n-1 tosses for unfair coins
 - Ans = P(Y and X) + P(Z and ~X) = P(X)*P(Y|X) + P(~X)*P(Z|~X)
-  = 0.5*(P(Y|X) + P(Z|X)) = 0.5(P(Y) + P(Z)) = 0.5P(Y or Z) = 0.5*1 =0.5
+  = 0.5*(P(Y|X) + P(Z|X)) = 0.5(P(Y) + P(Z)) = 0.5P(Y or Z) = 0.5 x 1  = 0.5
