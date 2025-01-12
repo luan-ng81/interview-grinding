@@ -89,3 +89,24 @@ its digits is exactly 100000?
 - Ans: 10 C 5
   - 100000 = 10^5 = 2^5 * 5^5
   - among 10 places, we eval number of ways to arrange five 2's and five 5's
+
+###########################################################
+https://quantquestions.io/problems/car-crashes
+
+On a given busy intersection, the probability of at least one car crash in a 1
+hour time interval is 8/9 ​ Assuming that car crashes occur independently of one
+another and at a constant rate throughout time, find the probability of at least
+one car crash in a 30 minute interval.
+
+- X = >=1 crash in 1 hr
+- ~X = no crash in 1 hr
+  + P(~X) = 1- 8/9 = 1/9
+- Y_1 = no crash in 1st half.5 hours
+- 1/9 = P(~X) = P(no crash 1 crash in 1 hours) = P(Y1*Y2) ->P(Y1)^2 = 1/9 ->
+  P(Y1) = 1/3
+- Ans: P(~Y1) = 1-1/3 =2/3
+
+
+Z = number of car accidents, mean(Z) = mu. rare event: n*mu = lambda when n->
+infty
+--> then Z follow Poisson(lambda)
