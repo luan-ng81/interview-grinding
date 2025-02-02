@@ -197,3 +197,12 @@ A: 4 slots to choose
 P (1st card is fire) = 1/3! ( only three slots remaining)
 P(2nd card is fire) = 1/2! ( the slots remaining)
 P(wnining) = 1 - 1/6 - 1/2 = 1/3
+
+###########################################################
+https://quantquestions.io/problems/the-last-airbender
+
+A chess tournament has 128 players, each with a distinct rating. Assume that the player with the higher rating always wins against a lower rated opponent and that the winner proceeds to the subsequent round. What is the probability that the highest rated and second-highest rated players will meet in the final?
+
+A: Devide set of players into 2 bracket (sets). If the hightest and second highest is in the same half then those players are guarantees to meet each other at some point before the final. so those 2 players have to be in 2 different sets. 
+- the first player can be anywhere in 128 positions
+- the second player has to be in diffrent half => 64/127 (64 availables for 2nd half, 127 remaining total positions)
