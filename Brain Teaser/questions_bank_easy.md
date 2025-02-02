@@ -191,3 +191,9 @@ Solution 1
 | W |   | A | F | x2 (swaps A and W) |
 Total: 8
 8/4! = 1/3
+
+
+A: 4 slots to choose
+P (1st card is fire) = 1/3! ( only three slots remaining)
+P(2nd card is fire) = 1/2! ( the slots remaining)
+P(wnining) = 1 - 1/6 - 1/2 = 1/3
