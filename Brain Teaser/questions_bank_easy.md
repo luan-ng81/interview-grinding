@@ -184,10 +184,15 @@ the probability that you win?
 
 Solution 1
 
+```
 |---+---+---+---+--------------------|
 | A | W | F | E | x2 (swaps A and W) |
 | E | A | W | F | x2 (swaps A and W) |
 | A | W |   | F | x2 (swaps A and W) |
 | W |   | A | F | x2 (swaps A and W) |
+
+```
+
+
 Total: 8
 8/4! = 1/3
