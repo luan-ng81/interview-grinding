@@ -184,12 +184,18 @@ the probability that you win?
 
 Solution 1
 
+```
 |---+---+---+---+--------------------|
 | A | W | F | E | x2 (swaps A and W) |
 | E | A | W | F | x2 (swaps A and W) |
 | A | W |   | F | x2 (swaps A and W) |
 | W |   | A | F | x2 (swaps A and W) |
+
+```
+
+
 Total: 8
+
 8/4! = 1/3
 
 
@@ -197,6 +203,7 @@ A: 4 slots to choose
 P (1st card is fire) = 1/3! ( only three slots remaining)
 P(2nd card is fire) = 1/2! ( the slots remaining)
 P(wnining) = 1 - 1/6 - 1/2 = 1/3
+<<<<<<< HEAD
 
 ###########################################################
 https://quantquestions.io/problems/the-last-airbender
@@ -206,3 +213,5 @@ A chess tournament has 128 players, each with a distinct rating. Assume that the
 A: Devide set of players into 2 bracket (sets). If the hightest and second highest is in the same half then those players are guarantees to meet each other at some point before the final. so those 2 players have to be in 2 different sets. 
 - the first player can be anywhere in 128 positions
 - the second player has to be in diffrent half => 64/127 (64 availables for 2nd half, 127 remaining total positions)
+=======
+>>>>>>> 7c30ccc0c7cdf2c1b7262f569986888243095449
