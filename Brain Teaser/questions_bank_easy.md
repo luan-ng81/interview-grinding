@@ -203,7 +203,6 @@ A: 4 slots to choose
 P (1st card is fire) = 1/3! ( only three slots remaining)
 P(2nd card is fire) = 1/2! ( the slots remaining)
 P(wnining) = 1 - 1/6 - 1/2 = 1/3
-<<<<<<< HEAD
 
 ###########################################################
 https://quantquestions.io/problems/the-last-airbender
@@ -214,4 +213,34 @@ A: Devide set of players into 2 bracket (sets). If the hightest and second highe
 - the first player can be anywhere in 128 positions
 - the second player has to be in diffrent half => 64/127 (64 availables for 2nd half, 127 remaining total positions)
 =======
->>>>>>> 7c30ccc0c7cdf2c1b7262f569986888243095449
+
+###########################################################
+Comparing Flips II
+
+
+You and your friend are playing a game with a fair coin, tossing it and writing down the outcomes. You win if HTH appears before HHT, else your friend wins. What is the probability that your friend wins?
+
+F: Friend wins (HHT)
+Y; you wins ( HTH)
+Roll the coin till H. From H, we have 2 branches: HT and HH => P_hh = P_ht = 1/2
+
+P(HTH) = P(HH) P (HTH | HH) + P(HT) P(HTH | HT)
+
+  = 1/2 * 0 +   1/2  P(HTH|HT)
+
+
+
+P(HTH|HT) = P(HTH | HTH) P(HTH) + P(HTH | HTT) P(HTT)
+
+          = 1/2            +    P(HTH | HTT) * 1/2
+
+
+P(HTH|HTT) = P(HTH)
+
+
+=> P(HTH) = 1/2 * 0 +   1/2  * [1/2  +   P(HTH) * 1/2 ]
+
+
+=> P(HTH) = 1/3
+
+=> P(HHT) = 1 - 1/3 = 2/3
