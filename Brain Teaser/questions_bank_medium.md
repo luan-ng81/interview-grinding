@@ -162,8 +162,16 @@ https://quantquestions.io/problems/dice-order-i
 
 You roll two fair dice. What is the probability that the highest value rolled is a four?
 
-X - Max of all coins 
+X - Max of all coins
 
 P(X=4) = P(X<=4) - P(X<=3)
        = (4/6)^2 - (3/6)^2
        = 7/36
+
+###########################################################
+https://quantquestions.io/problems/odd-coin-flips
+You flip 100 fair coins simultaneously. What is the probability that you observe
+an odd number of heads?
+
+Ans: X is the number of heads odd. P(X) = 1 - P(number of heads even) = 1 - P(X)
+due to symmetry -> P(X) = 0.5
