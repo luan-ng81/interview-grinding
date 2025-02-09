@@ -156,3 +156,14 @@ outwards. How many ways can the students line up?
 |---------+---+---+---+---+---+----+---+---+---+----|
 | heights |   |   |   |   | 9 | 10 |   |   |   |    |
 ```
+
+###########################################################
+https://quantquestions.io/problems/dice-order-i
+
+You roll two fair dice. What is the probability that the highest value rolled is a four?
+
+X - Max of all coins 
+
+P(X=4) = P(X<=4) - P(X<=3)
+       = (4/6)^2 - (3/6)^2
+       = 7/36
