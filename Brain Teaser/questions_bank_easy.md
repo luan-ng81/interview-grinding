@@ -209,7 +209,7 @@ https://quantquestions.io/problems/the-last-airbender
 
 A chess tournament has 128 players, each with a distinct rating. Assume that the player with the higher rating always wins against a lower rated opponent and that the winner proceeds to the subsequent round. What is the probability that the highest rated and second-highest rated players will meet in the final?
 
-A: Devide set of players into 2 bracket (sets). If the hightest and second highest is in the same half then those players are guarantees to meet each other at some point before the final. so those 2 players have to be in 2 different sets. 
+A: Devide set of players into 2 bracket (sets). If the hightest and second highest is in the same half then those players are guarantees to meet each other at some point before the final. so those 2 players have to be in 2 different sets.
 - the first player can be anywhere in 128 positions
 - the second player has to be in diffrent half => 64/127 (64 availables for 2nd half, 127 remaining total positions)
 =======
@@ -244,3 +244,44 @@ P(HTH|HTT) = P(HTH)
 => P(HTH) = 1/3
 
 => P(HHT) = 1 - 1/3 = 2/3
+
+###########################################################
+https://quantquestions.io/problems/basic-dice-game-i
+A casino offers you a game with a 6-sided die where you are paid the value of
+the roll. The casino lets you roll the first time. If you are happy with your
+roll, you can cash out. Else, you can choose to re-roll and cash out on this
+second value. What is the fair value of this game?
+
+- =E(X) = E(X* [X < 3.5] ) + E(X* [X >= 3.5]) = 4.25
+  1. E(X* [X < 3.5] )  = 3/6 * (1+2+3) = 3
+  2. E(X* [X >= 3.5] ) = E(X*[X>3.5] | X>3.5) = P(X>3.5) * E(X | X>3.5)
+      = 1/2 * (4/6+5/6+6/6) = 15/12
+
+###########################################################
+https://quantquestions.io/problems/dangerous-doubles
+Two fair coins are flipped at once. You receive $2 if exactly one heads that
+appears, but you lose
+$7 if you flip two heads. What is your expected profit/loss on this game if you
+play once?
+
+Ans: 2*0.5 - 7*0.25 = -0.75
+
+###########################################################
+https://quantquestions.io/problems/magic-doors
+Jeff is trapped in a room with 5 indistinguishable doors. Behind 2 of the doors
+are paths to freedom; one path is 2 miles long, and the other path is 5 miles
+long. Behind 3 of the doors are paths that magically lead back to the room; one
+path is 1 miles long, another path is 3 miles long, and the final path is 4 mile
+long. If Jeff returns to the room, the order of the doors are scrambled and the
+5 doors are once again indistinguishable. What is the expected number of miles
+Jeff will travel before reaching freedom?
+
+X - number of miles that Jeff travels given that Jeff didn't choose freedom door
+
+E(X) = P(freedom) * E( distance if choosing freedom) + P( return) * [ E (distance traveled if choosing back door to return to the start) + E ( total distance traveled until freedom) ]
+
+   E(X) = E(X*[Pick freedom door]) + E(X*[Pick return door])
+        = 2/5[1/2(2+5)] + 3/5*[8/3 + E(X)]
+   E(X)    = 2/5  * 7/2    + 3/5 *8/ 3 +  3/5*E(X)
+               = 14/10  +  24/15 + 3/5 * E(X)
+2/5 E(X) = 3 -> E(x) = 7.5
