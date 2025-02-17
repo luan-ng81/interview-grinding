@@ -278,10 +278,13 @@ Jeff will travel before reaching freedom?
 
 X - number of miles that Jeff travels given that Jeff didn't choose freedom door
 
-E(X) = P(freedom) * E( distance if choosing freedom) + P( return) * [ E (distance traveled if choosing back door to return to the start) + E ( total distance traveled until freedom) ]
+E(X) = P(freedom) * E( distance if choosing freedom) + P( return) * [ E
+(distance traveled if choosing back door to return to the start) + E ( total
+distance traveled until freedom) ]
 
    E(X) = E(X*[Pick freedom door]) + E(X*[Pick return door])
         = 2/5[1/2(2+5)] + 3/5*[8/3 + E(X)]
-   E(X)    = 2/5  * 7/2    + 3/5 *8/ 3 +  3/5*E(X)
+
+   --> E(X)    = 2/5  * 7/2    + 3/5 *8/ 3 +  3/5*E(X)
                = 14/10  +  24/15 + 3/5 * E(X)
-2/5 E(X) = 3 -> E(x) = 7.5
+--> 2/5 E(X) = 3 --> E(x) = 7.5
