@@ -175,3 +175,26 @@ an odd number of heads?
 
 Ans: X is the number of heads odd. P(X) = 1 - P(number of heads even) = 1 - P(X)
 due to symmetry -> P(X) = 0.5
+
+###########################################################
+https://quantquestions.io/problems/better-in-red-i
+A 10×10×10 cube is painted red on the surface and then cut into 1000 =1×1×1= cubes
+and one is selected uniformly at random. Find the expected number of red faces
+on this cube.
+
+numbers of
+| 3-face | 2-face | 1-face |
+|--------+--------+--------|
+|      8 | 8*4*3  | 8^2*6  |
+
+Expected val = (1*384 + 2*96 + 3*8) / 1000 = .6
+
+###########################################################
+https://quantquestions.io/problems/collecting-toys-i
+Every box of cereal contains one toy from a group of five distinct toys, each of
+which is mutually independent from the others and is equally likely to be within
+a given box. On average, how many boxes of cereal will you need to open in order
+to collect all five toys?
+[[https://math.stackexchange.com/questions/4810444/toy-collection-question][expected value - toy collection question - Mathematics Stack Exchange]]
+
+5/5+5/4+5/3+5/2+5/1=137/12
