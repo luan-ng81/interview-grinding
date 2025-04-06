@@ -206,3 +206,45 @@ https://math.stackexchange.com/questions/4810444/toy-collection-question
 ```
 5/5+5/4+5/3+5/2+5/1=137/12
 ```
+
+
+###########################################################
+
+https://quantquestions.io/problems/heads-and-tails-i
+On average, how many flips of a fair coin will it take until you observe heads immediately followed by tails?
+
+Hint: If you get tails on your first toss, then you must start over again. If
+you gets heads on your first toss, then you can either get HH or If you get HT,
+then you are done. Otherwise, you only need one more tail to finish the game on
+the next turn. How can you set up an equation with these cases in mind?
+
+X = # flips till getting HT
+
+E (X) = 1. + 2. = 1/2 * (3) + 1/2 * (1 + E(X))
+E(X) = 4
+
+1. 1st flip = H
+   1/2 * E(X | 1st flip = H)
+      E(X | 1st flip = H) = 1 + E(# of flips till getting a T)
+                          = 1 + 1/(1/2)
+2. 1st flip = T
+   1/2 * E(X | 1st flip = T)
+       E(X | 1st flip = T) = 1 + E(X)
+
+https://quantquestions.io/problems/repetitious-game-ii
+(coupon collection problem)
+
+Audrey repeatedly draws cards from a standard 52-card deck with replacement.
+Compute the expected number of draws for Audrey to get at least one card from
+each suit.
+
+1 + 52/39 + 52/26 + 52/13 = 8.3333
+
+X1 = number of draws for the first suite
+X2 = number of draws for the 2nd suite, different than 1st suite
+X3 = number of draws for the 3rd suite, different than 1st suite and 2nd suite
+X4 = number of draws for the 3rd suite, different than 1st suite and 2nd suite,
+and 3rd suite
+
+X2, X3, X4 ~ geometric distributions
+E(X1 + X2 + X3 + X4) = 1 + 52/39 + 52/26 + 52/13 = 8.3333
