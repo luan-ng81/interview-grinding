@@ -57,17 +57,17 @@ Compute: # of pairs with different color: 100 * 50
 ###########################################################
 https://quantquestions.io/problems/marble-runs
 
-You uniformly select two random points from the circumference of the unit circle. Find the expected length of the chord (line segment) between the two points, with the answer is in the form x/\pi for some rational number x. Find x. 
+You uniformly select two random points from the circumference of the unit circle. Find the expected length of the chord (line segment) between the two points, with the answer is in the form $\frac{x}{\pi}$ for some rational number x. Find x. 
 
 Picking the two points uniform on the circumference is equivalent to picking these two angles. The measure of the angle between 
-is \theta.  
+is $\theta$.  
 
-Fix one of the points at (1, 0). Pick the other point uniform (0, \pi) (as symmetry)
-=> \theta also go from (0, \pi) due to symmetry.
-Use formula of chord length on unit circle: 2 * sin (\theta /2) (derive from Eucledian distance and each point on unit circle has cordinate (cos(\theta), sin(\theta))
+Fix one of the points at (1, 0). Pick the other point uniform $(0, \pi)$  (as symmetry)
+=> $\theta$ also go from $(0, \pi)$ due to symmetry.
+Use formula of chord length on unit circle: $2 * \sin (\frac{\theta}{2})$ (derive from Eucledian distance and each point on unit circle has cordinate $\cos(\theta), \sin(\theta)$
 
 Thus :
 
 $$
-E(X) = \int_0^\pi \frac{1}{\pi} \times 2 \sin\left(\frac{\theta}{2}\right) \, d\theta  = \frac{4}{\pi} \int_0^{\pi/2} \sin(u) \, du = \frac{4}{\pi}
+E(X) = \int_0^\pi \frac{1}{\pi} \times 2 \sin\left(\frac{\theta}{2}\right) \; d\theta  = \frac{4}{\pi} \int_0^{\pi/2} \sin(u) \; du = \frac{4}{\pi}
 $$
