@@ -113,6 +113,7 @@ At any step with k noodles (2k ends):
 
 
 so the general solutions is: 
+
 $$
 \mathbb{E}[\text{loops}] = \sum_{k=1}^n \frac{1}{2k - 1} = \sum_{k=1}^{100} \frac{1}{2k - 1} = \frac{1}{199} + \cdots + frac{1}{5} +  \frac{1}{3} + 1
 $$
