@@ -71,3 +71,50 @@ Thus :
 $$
 E(X) = \int_0^\pi \frac{1}{\pi} \times 2 \sin\left(\frac{\theta}{2}\right) \; d\theta  = \frac{4}{\pi} \int_0^{\pi/2} \sin(u) \; du = \frac{4}{\pi}
 $$
+
+
+###########################################################
+https://quantquestions.io/problems/marble-runs
+
+There are 100 noodles in your bowl of ramen. You take the ends of two noodles uniformly at random and connect the two, putting the connected noodle back into the bowl and continuing until there are no ends left to connect. On average, how many circles will you create? Round to the nearest whole number.
+
+First Connection:
+
+Choose any two ends at random.
+
+There are three possibilities when choosing two ends:
+
+Both ends are from the same noodle.
+
+The ends are from two different noodles.
+
+The probability that both ends are from the same noodle:
+
+**For any given end, there's 1 other end that's its pair out of the remaining 199 ends. So, probability = 1/199.**
+
+Therefore, the probability they're from different noodles = 1 - 1/199 = 198/199.
+
+If same noodle: We've created a circle. Number of noodles decreases by 1 (since that noodle is now a loop and out of the bowl). Now we have 99 noodles left (198 ends).
+
+If different noodles: We've merged two noodles into one= > **not forming circle**.  Number of noodles decreases by 1 (two noodles become one). Now we have 99 noodles left (198 ends, since two ends are connected, removing two ends and leaving the merged noodle with two ends).
+
+
+At any step with k noodles (2k ends):
+
+- Probability of forming a circle: 1/(2k - 1).
+
+- Because for any end, there's 1 matching end out of (2k - 1) remaining ends.
+
+- Probability of not forming a circle (merging): (2k - 2)/(2k - 1).
+
+- Each time a circle is formed, the count of circles increases by 1.
+
+- The process continues until no ends are left (i.e., until all noodles have been connected into circles).
+
+
+so the general solutions is: 
+$$
+\mathbb{E}[\text{loops}] = \sum_{k=1}^n \frac{1}{2k - 1} = \sum_{k=1}^{100} \frac{1}{2k - 1} = \frac{1}{199} + \cdots + frac{1}{5} +  \frac{1}{3} + 1
+$$
+
+
